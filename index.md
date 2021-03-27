@@ -1,5 +1,4 @@
 ---
-layout: default
 name: Pixotic
 title: null
 ---
