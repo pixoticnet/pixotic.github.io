@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ChoiceList Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+	<meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0" />
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Protocol/ChoiceList" class="dashAnchor"></a>
+    <a title="ChoiceList Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p>
+          <a href="../index.html">Able Docs</a>
+          <span class="no-mobile"> (99% documented)</span>
+        </p>
+    
+        <p class="header-right">
+          <a href="https://github.com/pixoticnet/Able">
+            <img src="../img/gh.png"/>
+            <span class="no-mobile">View on GitHub</span>
+          </a>
+        </p>
+    
+      </div>
+    </header>
+    <div id="breadcrumbs-container">
+      <div class="content-wrapper">
+        <p id="breadcrumbs">
+          <span class="no-mobile">
+            <a href="../index.html">Able Reference</a>
+            <img id="carat" src="../img/carat.png" />
+          </span>
+          ChoiceList Protocol Reference
+        </p>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="article-wrapper">
+        <article class="main-content">
+          <section>
+            <section class="section">
+              <h1>ChoiceList</h1>
+                <div class="declaration">
+                  <div class="language">
+                    
+                    <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">ChoiceList</span> <span class="p">:</span> <span class="kt">Hashable</span></code></pre>
+
+                  </div>
+                </div>
+              <p>Undocumented</p>
+
+            </section>
+            <section class="section task-group-section">
+              <div class="task-group">
+                <ul>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/s:4Able10ChoiceListP0B0a"></a>
+                      <a name="//apple_ref/swift/Alias/Choice" class="dashAnchor"></a>
+                      <a class="token" href="#/s:4Able10ChoiceListP0B0a">Choice</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>Undocumented</p>
+
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Swift</p>
+                            <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">Choice</span> <span class="o">=</span> <span class="kt"><a href="../Enums/ChoiceItem.html">ChoiceItem</a></span><span class="o">&lt;</span><span class="k">Self</span><span class="o">&gt;</span></code></pre>
+
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/s:4Able10ChoiceListP16availableOptionsSayAA0B4ItemOyxGGvpZ"></a>
+                      <a name="//apple_ref/swift/Variable/availableOptions" class="dashAnchor"></a>
+                      <a class="token" href="#/s:4Able10ChoiceListP16availableOptionsSayAA0B4ItemOyxGGvpZ">availableOptions</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>The order of the items as they should appear in a menu; <code>.separator</code> indicates a dividing point between categories that may be represented by a divider or other separator.</p>
+
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Swift</p>
+                            <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">var</span> <span class="nv">availableOptions</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Protocols/ChoiceList.html#/s:4Able10ChoiceListP0B0a">Choice</a></span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/s:4Able10ChoiceListP14localizedTitleSSvp"></a>
+                      <a name="//apple_ref/swift/Property/localizedTitle" class="dashAnchor"></a>
+                      <a class="token" href="#/s:4Able10ChoiceListP14localizedTitleSSvp">localizedTitle</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>The title of the enumeration case as it appears in a menu</p>
+
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Swift</p>
+                            <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">localizedTitle</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/s:4Able10ChoiceListP16indentationLevelSivp"></a>
+                      <a name="//apple_ref/swift/Property/indentationLevel" class="dashAnchor"></a>
+                      <a class="token" href="#/s:4Able10ChoiceListP16indentationLevelSivp">indentationLevel</a>
+                      </code>
+                        <span class="declaration-note">
+                          Default implementation
+                        </span>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>The indentation level that a menu item representing this choice should have</p>
+
+                        </div>
+                        <h4>Default Implementation</h4>
+                        <div class="default_impl abstract">
+                          <p>Default implementation has no indentation</p>
+
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Swift</p>
+                            <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">indentationLevel</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/s:4Able10ChoiceListP7toolTipSSSgvp"></a>
+                      <a name="//apple_ref/swift/Property/toolTip" class="dashAnchor"></a>
+                      <a class="token" href="#/s:4Able10ChoiceListP7toolTipSSSgvp">toolTip</a>
+                      </code>
+                        <span class="declaration-note">
+                          Default implementation
+                        </span>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>The localized tooltip that will be displayed to the user</p>
+
+                        </div>
+                        <h4>Default Implementation</h4>
+                        <div class="default_impl abstract">
+                          <p>Default implementation has no tooltip</p>
+
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Swift</p>
+                            <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">toolTip</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/s:4Able10ChoiceListP6symbolAA12SymbolSourceOSgvp"></a>
+                      <a name="//apple_ref/swift/Property/symbol" class="dashAnchor"></a>
+                      <a class="token" href="#/s:4Able10ChoiceListP6symbolAA12SymbolSourceOSgvp">symbol</a>
+                      </code>
+                        <span class="declaration-note">
+                          Default implementation
+                        </span>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>The image that will appear in a popup menu or segmented control</p>
+
+                        </div>
+                        <h4>Default Implementation</h4>
+                        <div class="default_impl abstract">
+                          <p>By default there is no image</p>
+
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Swift</p>
+                            <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">symbol</span><span class="p">:</span> <span class="kt"><a href="../Enums/SymbolSource.html">SymbolSource</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/s:4Able10ChoiceListP9choiceAIDAA0E0VSgvp"></a>
+                      <a name="//apple_ref/swift/Property/choiceAID" class="dashAnchor"></a>
+                      <a class="token" href="#/s:4Able10ChoiceListP9choiceAIDAA0E0VSgvp">choiceAID</a>
+                      </code>
+                        <span class="declaration-note">
+                          Default implementation
+                        </span>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>The accessibility ID for this item, if any</p>
+
+                        </div>
+                        <h4>Default Implementation</h4>
+                        <div class="default_impl abstract">
+                          
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Swift</p>
+                            <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">choiceAID</span><span class="p">:</span> <span class="kt"><a href="../Structs/AID.html">AID</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/s:4Able10ChoiceListPAAE16availableChoicesSayxSgGvpZ"></a>
+                      <a name="//apple_ref/swift/Variable/availableChoices" class="dashAnchor"></a>
+                      <a class="token" href="#/s:4Able10ChoiceListPAAE16availableChoicesSayxSgGvpZ">availableChoices</a>
+                      </code>
+                        <span class="declaration-note">
+                          Extension method
+                        </span>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>The choices that are available for this type (filtering out any dividers and sections)</p>
+
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Swift</p>
+                            <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">var</span> <span class="nv">availableChoices</span><span class="p">:</span> <span class="p">[</span><span class="k">Self</span><span class="p">?]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="task-group">
+                <div class="task-name-container">
+                  <a name="/Available%20where%20%60Self%60%20%3A%20%60CaseIterable%60"></a>
+                  <a name="//apple_ref/swift/Section/Available where `Self` : `CaseIterable`" class="dashAnchor"></a>
+                  <div class="section-name-container">
+                    <a class="section-name-link" href="#/Available%20where%20%60Self%60%20%3A%20%60CaseIterable%60"></a>
+                    <h3 class="section-name"><p>Available where <code>Self</code> : <code>CaseIterable</code></p>
+</h3>
+                  </div>
+                </div>
+                <ul>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/s:4Able10ChoiceListPAAs12CaseIterableRzrlE16availableOptionsSayAA0B4ItemOyxGGvpZ"></a>
+                      <a name="//apple_ref/swift/Variable/availableOptions" class="dashAnchor"></a>
+                      <a class="token" href="#/s:4Able10ChoiceListPAAs12CaseIterableRzrlE16availableOptionsSayAA0B4ItemOyxGGvpZ">availableOptions</a>
+                      </code>
+                        <span class="declaration-note">
+                          Default implementation
+                        </span>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          
+                        </div>
+                        <h4>Default Implementation</h4>
+                        <div class="default_impl abstract">
+                          <p>The default availableOptions just returns all the cases; this can be overridden</p>
+
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Swift</p>
+                            <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">var</span> <span class="nv">availableOptions</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Protocols/ChoiceList.html#/s:4Able10ChoiceListP0B0a">Choice</a></span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/s:4Able10ChoiceListPAAs12CaseIterableRzrlE11choiceCasesSayAA0B4ItemOyxGGvpZ"></a>
+                      <a name="//apple_ref/swift/Variable/choiceCases" class="dashAnchor"></a>
+                      <a class="token" href="#/s:4Able10ChoiceListPAAs12CaseIterableRzrlE11choiceCasesSayAA0B4ItemOyxGGvpZ">choiceCases</a>
+                      </code>
+                        <span class="declaration-note">
+                          Extension method
+                        </span>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>Undocumented</p>
+
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Swift</p>
+                            <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">var</span> <span class="nv">choiceCases</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Protocols/ChoiceList.html#/s:4Able10ChoiceListP0B0a">Choice</a></span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </section>
+        </article>
+      </div>
+      <div class="nav-wrapper">
+        <nav class="nav-bottom">
+          <ul class="nav-groups">
+            <li class="nav-group-name">
+              <a href="../Enums.html">Enumerations</a>
+              <ul class="nav-group-tasks">
+                <li class="nav-group-task">
+                  <a href="../Enums/ChoiceItem.html">ChoiceItem</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="../Enums/SymbolSource.html">SymbolSource</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="../Enums/SystemSymbol.html">SystemSymbol</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-group-name">
+              <a href="../Extensions.html">Extensions</a>
+              <ul class="nav-group-tasks">
+                <li class="nav-group-task">
+                  <a href="../Extensions/OneOf2.html">OneOf2</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="../Extensions/OneOf3.html">OneOf3</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="../Extensions/OneOf4.html">OneOf4</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="../Extensions/OneOf5.html">OneOf5</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="../Extensions/RawRepresentable.html">RawRepresentable</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-group-name">
+              <a href="../Protocols.html">Protocols</a>
+              <ul class="nav-group-tasks">
+                <li class="nav-group-task">
+                  <a href="../Protocols/ChoiceList.html">ChoiceList</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-group-name">
+              <a href="../Structs.html">Structures</a>
+              <ul class="nav-group-tasks">
+                <li class="nav-group-task">
+                  <a href="../Structs/AID.html">AID</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-wrapper">
+        <section id="footer">
+          <p><a class="link" href="http://www.pixotic.net" target="_blank" rel="external">www.pixotic.net</a></p>
+          
+        </section>
+      </div>
+    </div>
+  </body>
+</div>
+</html>

@@ -1,6 +1,82 @@
 {
   "warnings": [
-
+    {
+      "file": "/opt/src/glimpse/GIO/Able/Sources/Able/Able.swift",
+      "line": 9,
+      "symbol": "AID.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/opt/src/glimpse/GIO/Able/Sources/Able/Choices.swift",
+      "line": 3,
+      "symbol": "ChoiceList",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/opt/src/glimpse/GIO/Able/Sources/Able/Choices.swift",
+      "line": 4,
+      "symbol": "ChoiceList.Choice",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/opt/src/glimpse/GIO/Able/Sources/Able/Choices.swift",
+      "line": 26,
+      "symbol": "ChoiceList",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/opt/src/glimpse/GIO/Able/Sources/Able/Choices.swift",
+      "line": 40,
+      "symbol": "ChoiceList",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/opt/src/glimpse/GIO/Able/Sources/Able/Choices.swift",
+      "line": 46,
+      "symbol": "ChoiceList.choiceCases",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/opt/src/glimpse/GIO/Able/Sources/Able/Choices.swift",
+      "line": 52,
+      "symbol": "ChoiceList",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/opt/src/glimpse/GIO/Able/Sources/Able/Choices.swift",
+      "line": 100,
+      "symbol": "RawRepresentable.localizedTitle",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/opt/src/glimpse/GIO/Able/Sources/Able/Choices.swift",
+      "line": 104,
+      "symbol": "RawRepresentable.availableOptions",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/opt/src/glimpse/GIO/Able/Sources/Able/Symbols.swift",
+      "line": 19,
+      "symbol": "SystemSymbol.systemName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/opt/src/glimpse/GIO/Able/Sources/Able/Symbols.swift",
+      "line": 20,
+      "symbol": "SystemSymbol.systemCharacter",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    }
   ],
   "source_directory": "/opt/src/github/pixoticnet/Able"
 }
