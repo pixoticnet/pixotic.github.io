@@ -64,6 +64,83 @@
       "warning": "undocumented"
     },
     {
+      "file": "/opt/src/glimpse/GIO/Able/Sources/Able/PropInfo.swift",
+      "line": 22,
+      "symbol": "ClusterInfo.key",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/opt/src/glimpse/GIO/Able/Sources/Able/PropInfo.swift",
+      "line": 33,
+      "symbol": "ClusterInfo.init(key:title:toolTip:truncations:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/opt/src/glimpse/GIO/Able/Sources/Able/PropInfo.swift",
+      "line": 93,
+      "symbol": "AnyPropInfo.init(_:key:toolTip:step:min:smin:max:smax:formatter:toggleDefault:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/opt/src/glimpse/GIO/Able/Sources/Able/PropInfo.swift",
+      "line": 113,
+      "symbol": "TypedPropInfo.keyPath",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/opt/src/glimpse/GIO/Able/Sources/Able/PropInfo.swift",
+      "line": 138,
+      "symbol": "TypedPropInfo.init(_:key:keyPath:toolTip:step:min:smin:max:smax:formatter:toggleDefault:defaultValue:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/opt/src/glimpse/GIO/Able/Sources/Able/PropInfo.swift",
+      "line": 158,
+      "symbol": "TypedPropInfo.defaultValueTyped(forContext:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/opt/src/glimpse/GIO/Able/Sources/Able/Selections.swift",
+      "line": 12,
+      "symbol": "SelectionOf.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/opt/src/glimpse/GIO/Able/Sources/Able/Selections.swift",
+      "line": 32,
+      "symbol": "SelectionOf.subscript(dynamicMember:)",
+      "symbol_kind": "source.lang.swift.decl.function.subscript",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/opt/src/glimpse/GIO/Able/Sources/Able/Selections.swift",
+      "line": 70,
+      "symbol": "SelectionProjection.empty",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/opt/src/glimpse/GIO/Able/Sources/Able/Selections.swift",
+      "line": 71,
+      "symbol": "SelectionProjection.homogeneous(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/opt/src/glimpse/GIO/Able/Sources/Able/Selections.swift",
+      "line": 72,
+      "symbol": "SelectionProjection.heterogeneous(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
       "file": "/opt/src/glimpse/GIO/Able/Sources/Able/Symbols.swift",
       "line": 19,
       "symbol": "SystemSymbol.systemName",

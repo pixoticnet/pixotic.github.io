@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>SymbolSource Enumeration Reference</title>
+    <title>MutableCollection Extension Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -11,8 +11,8 @@
     
   </head>
   <body>
-    <a name="//apple_ref/swift/Enum/SymbolSource" class="dashAnchor"></a>
-    <a title="SymbolSource Enumeration Reference"></a>
+    <a name="//apple_ref/swift/Extension/MutableCollection" class="dashAnchor"></a>
+    <a title="MutableCollection Extension Reference"></a>
     <header>
       <div class="content-wrapper">
         <p>
@@ -36,7 +36,7 @@
             <a href="../index.html">Able Reference</a>
             <img id="carat" src="../img/carat.png" />
           </span>
-          SymbolSource Enumeration Reference
+          MutableCollection Extension Reference
         </p>
       </div>
     </div>
@@ -45,26 +45,34 @@
         <article class="main-content">
           <section>
             <section class="section">
-              <h1>SymbolSource</h1>
+              <h1>MutableCollection</h1>
                 <div class="declaration">
                   <div class="language">
                     
-                    <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">SymbolSource</span></code></pre>
+                    <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">extension</span> <span class="kt">MutableCollection</span> <span class="k">where</span> <span class="kt">Element</span> <span class="p">:</span> <span class="kt">Identifiable</span></code></pre>
 
                   </div>
                 </div>
-              <p>A source of an image; this can be used to hold the image data that can be later converted to a native image resource.</p>
-
+              
             </section>
             <section class="section task-group-section">
               <div class="task-group">
+                <div class="task-name-container">
+                  <a name="/Available%20where%20%60Element%60%20%3A%20%60Identifiable%60"></a>
+                  <a name="//apple_ref/swift/Section/Available where `Element` : `Identifiable`" class="dashAnchor"></a>
+                  <div class="section-name-container">
+                    <a class="section-name-link" href="#/Available%20where%20%60Element%60%20%3A%20%60Identifiable%60"></a>
+                    <h3 class="section-name"><p>Available where <code>Element</code> : <code>Identifiable</code></p>
+</h3>
+                  </div>
+                </div>
                 <ul>
                   <li class="item">
                     <div>
                       <code>
-                      <a name="/s:4Able12SymbolSourceO6symbolyAcA06SystemB0OcACmF"></a>
-                      <a name="//apple_ref/swift/Element/symbol(_:)" class="dashAnchor"></a>
-                      <a class="token" href="#/s:4Able12SymbolSourceO6symbolyAcA06SystemB0OcACmF">symbol(_:<wbr>)</a>
+                      <a name="/s:SM4Ables12Identifiable7ElementRpzrlE9selectingAA11SelectionOfVys10ArraySliceVyADGGShyAC_2IDQZG_tcip"></a>
+                      <a name="//apple_ref/swift/Method/subscript(selecting:)" class="dashAnchor"></a>
+                      <a class="token" href="#/s:SM4Ables12Identifiable7ElementRpzrlE9selectingAA11SelectionOfVys10ArraySliceVyADGGShyAC_2IDQZG_tcip">subscript(selecting:<wbr>)</a>
                       </code>
                     </div>
                     <div class="height-container">
@@ -72,68 +80,20 @@
                       <section class="section">
                         <div class="pointer"></div>
                         <div class="abstract">
-                          <p>An image that is represented by a system symbol</p>
+                          <p>Selects the elements of the given collection using a <code><a href="../Structs/SelectionOf.html">SelectionOf</a></code>.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    this subscript assumes that ID will have at most a single representation in the collection in order to optimize the traversal and short-circuit once all the identifiers have been found.
+
+</div>
 
                         </div>
                         <div class="declaration">
                           <h4>Declaration</h4>
                           <div class="language">
                             <p class="aside-title">Swift</p>
-                            <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">symbol</span><span class="p">(</span><span class="kt"><a href="../Enums/SystemSymbol.html">SystemSymbol</a></span><span class="p">)</span></code></pre>
-
-                          </div>
-                        </div>
-                      </section>
-                    </div>
-                  </li>
-                  <li class="item">
-                    <div>
-                      <code>
-                      <a name="/s:4Able12SymbolSourceO3svgyACSScACmF"></a>
-                      <a name="//apple_ref/swift/Element/svg(_:)" class="dashAnchor"></a>
-                      <a class="token" href="#/s:4Able12SymbolSourceO3svgyACSScACmF">svg(_:<wbr>)</a>
-                      </code>
-                    </div>
-                    <div class="height-container">
-                      <div class="pointer-container"></div>
-                      <section class="section">
-                        <div class="pointer"></div>
-                        <div class="abstract">
-                          <p>A string representing a vector image to load</p>
-
-                        </div>
-                        <div class="declaration">
-                          <h4>Declaration</h4>
-                          <div class="language">
-                            <p class="aside-title">Swift</p>
-                            <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">svg</span><span class="p">(</span><span class="kt">String</span><span class="p">)</span></code></pre>
-
-                          </div>
-                        </div>
-                      </section>
-                    </div>
-                  </li>
-                  <li class="item">
-                    <div>
-                      <code>
-                      <a name="/s:4Able12SymbolSourceO5imageyACypcACmF"></a>
-                      <a name="//apple_ref/swift/Element/image(_:)" class="dashAnchor"></a>
-                      <a class="token" href="#/s:4Able12SymbolSourceO5imageyACypcACmF">image(_:<wbr>)</a>
-                      </code>
-                    </div>
-                    <div class="height-container">
-                      <div class="pointer-container"></div>
-                      <section class="section">
-                        <div class="pointer"></div>
-                        <div class="abstract">
-                          <p>A type-erased native image, such as a <code>CGImage</code>, <code>CIImage</code>, <code>NSImage</code>, or <code>UIImage</code></p>
-
-                        </div>
-                        <div class="declaration">
-                          <h4>Declaration</h4>
-                          <div class="language">
-                            <p class="aside-title">Swift</p>
-                            <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">image</span><span class="p">(</span><span class="kt">Any</span><span class="p">)</span></code></pre>
+                            <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="nf">subscript</span><span class="p">(</span><span class="n">selecting</span> <span class="nv">fromIdentifiers</span><span class="p">:</span> <span class="kt">Set</span><span class="o">&lt;</span><span class="kt">Element</span><span class="o">.</span><span class="kt">ID</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/SelectionOf.html">SelectionOf</a></span><span class="o">&lt;</span><span class="kt">ArraySlice</span><span class="o">&lt;</span><span class="kt">Element</span><span class="o">&gt;&gt;</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                           </div>
                         </div>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>OneOf4 Extension Reference</title>
+    <title>CodingCluster Protocol Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -11,8 +11,8 @@
     
   </head>
   <body>
-    <a name="//apple_ref/swift/Extension/OneOf4" class="dashAnchor"></a>
-    <a title="OneOf4 Extension Reference"></a>
+    <a name="//apple_ref/swift/Protocol/CodingCluster" class="dashAnchor"></a>
+    <a title="CodingCluster Protocol Reference"></a>
     <header>
       <div class="content-wrapper">
         <p>
@@ -36,7 +36,7 @@
             <a href="../index.html">Able Reference</a>
             <img id="carat" src="../img/carat.png" />
           </span>
-          OneOf4 Extension Reference
+          CodingCluster Protocol Reference
         </p>
       </div>
     </div>
@@ -45,35 +45,26 @@
         <article class="main-content">
           <section>
             <section class="section">
-              <h1>OneOf4</h1>
+              <h1>CodingCluster</h1>
                 <div class="declaration">
                   <div class="language">
                     
-                    <pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">OneOf4</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/ChoiceList.html">ChoiceList</a></span> <span class="k">where</span> <span class="kt">T1</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/ChoiceList.html">ChoiceList</a></span><span class="p">,</span> <span class="kt">T2</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/ChoiceList.html">ChoiceList</a></span><span class="p">,</span> <span class="kt">T3</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/ChoiceList.html">ChoiceList</a></span><span class="p">,</span> <span class="kt">T4</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/ChoiceList.html">ChoiceList</a></span></code></pre>
+                    <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">CodingCluster</span> <span class="p">:</span> <span class="kt">CodingKey</span></code></pre>
 
                   </div>
                 </div>
-              <p>A sum of four localized choice lists can be automatically sythesized as a single choice list</p>
+              <p><code>CodingCluster</code> is a <code>CodingKey</code> that contains information about the property it represents</p>
 
             </section>
             <section class="section task-group-section">
               <div class="task-group">
-                <div class="task-name-container">
-                  <a name="/Available%20where%20%60T1%60%20%3A%20%60ChoiceList%60%2C%20%60T2%60%20%3A%20%60ChoiceList%60%2C%20%60T3%60%20%3A%20%60ChoiceList%60%2C%20%60T4%60%20%3A%20%60ChoiceList%60"></a>
-                  <a name="//apple_ref/swift/Section/Available where `T1` : `ChoiceList`, `T2` : `ChoiceList`, `T3` : `ChoiceList`, `T4` : `ChoiceList`" class="dashAnchor"></a>
-                  <div class="section-name-container">
-                    <a class="section-name-link" href="#/Available%20where%20%60T1%60%20%3A%20%60ChoiceList%60%2C%20%60T2%60%20%3A%20%60ChoiceList%60%2C%20%60T3%60%20%3A%20%60ChoiceList%60%2C%20%60T4%60%20%3A%20%60ChoiceList%60"></a>
-                    <h3 class="section-name"><p>Available where <code>T1</code> : <code><a href="../Protocols/ChoiceList.html">ChoiceList</a></code>, <code>T2</code> : <code><a href="../Protocols/ChoiceList.html">ChoiceList</a></code>, <code>T3</code> : <code><a href="../Protocols/ChoiceList.html">ChoiceList</a></code>, <code>T4</code> : <code><a href="../Protocols/ChoiceList.html">ChoiceList</a></code></p>
-</h3>
-                  </div>
-                </div>
                 <ul>
                   <li class="item">
                     <div>
                       <code>
-                      <a name="/s:4Able10ChoiceListP14localizedTitleSSvp"></a>
-                      <a name="//apple_ref/swift/Property/localizedTitle" class="dashAnchor"></a>
-                      <a class="token" href="#/s:4Able10ChoiceListP14localizedTitleSSvp">localizedTitle</a>
+                      <a name="/s:4Able13CodingClusterP0B5OwnerQa"></a>
+                      <a name="//apple_ref/swift/Alias/CodingOwner" class="dashAnchor"></a>
+                      <a class="token" href="#/s:4Able13CodingClusterP0B5OwnerQa">CodingOwner</a>
                       </code>
                     </div>
                     <div class="height-container">
@@ -81,13 +72,14 @@
                       <section class="section">
                         <div class="pointer"></div>
                         <div class="abstract">
-                          
+                          <p>The owning type for this <code>CodingCluster</code>, which is typically the enclosing type</p>
+
                         </div>
                         <div class="declaration">
                           <h4>Declaration</h4>
                           <div class="language">
                             <p class="aside-title">Swift</p>
-                            <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">localizedTitle</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                            <pre class="highlight swift"><code><span class="kd">associatedtype</span> <span class="kt">CodingOwner</span> <span class="p">:</span> <span class="kt">Decodable</span><span class="p">,</span> <span class="kt">Encodable</span></code></pre>
 
                           </div>
                         </div>
@@ -97,9 +89,9 @@
                   <li class="item">
                     <div>
                       <code>
-                      <a name="/s:4Able10ChoiceListP7toolTipSSSgvp"></a>
-                      <a name="//apple_ref/swift/Property/toolTip" class="dashAnchor"></a>
-                      <a class="token" href="#/s:4Able10ChoiceListP7toolTipSSSgvp">toolTip</a>
+                      <a name="/s:4Able13CodingClusterP7clusterAA0C4InfoVvpZ"></a>
+                      <a name="//apple_ref/swift/Variable/cluster" class="dashAnchor"></a>
+                      <a class="token" href="#/s:4Able13CodingClusterP7clusterAA0C4InfoVvpZ">cluster</a>
                       </code>
                     </div>
                     <div class="height-container">
@@ -107,13 +99,14 @@
                       <section class="section">
                         <div class="pointer"></div>
                         <div class="abstract">
-                          
+                          <p>Static localized information about the type itself.</p>
+
                         </div>
                         <div class="declaration">
                           <h4>Declaration</h4>
                           <div class="language">
                             <p class="aside-title">Swift</p>
-                            <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">toolTip</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                            <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">var</span> <span class="nv">cluster</span><span class="p">:</span> <span class="kt"><a href="../Structs/ClusterInfo.html">ClusterInfo</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                           </div>
                         </div>
@@ -123,9 +116,9 @@
                   <li class="item">
                     <div>
                       <code>
-                      <a name="/s:4Able10ChoiceListP6symbolAA12SymbolSourceOSgvp"></a>
-                      <a name="//apple_ref/swift/Property/symbol" class="dashAnchor"></a>
-                      <a class="token" href="#/s:4Able10ChoiceListP6symbolAA12SymbolSourceOSgvp">symbol</a>
+                      <a name="/s:4Able13CodingClusterP8propInfoAA04PropE0_pvp"></a>
+                      <a name="//apple_ref/swift/Property/propInfo" class="dashAnchor"></a>
+                      <a class="token" href="#/s:4Able13CodingClusterP8propInfoAA04PropE0_pvp">propInfo</a>
                       </code>
                     </div>
                     <div class="height-container">
@@ -133,13 +126,14 @@
                       <section class="section">
                         <div class="pointer"></div>
                         <div class="abstract">
-                          
+                          <p>Localized information about the property.</p>
+
                         </div>
                         <div class="declaration">
                           <h4>Declaration</h4>
                           <div class="language">
                             <p class="aside-title">Swift</p>
-                            <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">symbol</span><span class="p">:</span> <span class="kt"><a href="../Enums/SymbolSource.html">SymbolSource</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                            <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">propInfo</span><span class="p">:</span> <span class="kt"><a href="../Protocols/PropInfo.html">PropInfo</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                           </div>
                         </div>
@@ -149,9 +143,9 @@
                   <li class="item">
                     <div>
                       <code>
-                      <a name="/s:4Able10ChoiceListP16indentationLevelSivp"></a>
-                      <a name="//apple_ref/swift/Property/indentationLevel" class="dashAnchor"></a>
-                      <a class="token" href="#/s:4Able10ChoiceListP16indentationLevelSivp">indentationLevel</a>
+                      <a name="/s:4Able13CodingClusterP14keyDescriptionSSSgvp"></a>
+                      <a name="//apple_ref/swift/Property/keyDescription" class="dashAnchor"></a>
+                      <a class="token" href="#/s:4Able13CodingClusterP14keyDescriptionSSSgvp">keyDescription</a>
                       </code>
                     </div>
                     <div class="height-container">
@@ -159,66 +153,14 @@
                       <section class="section">
                         <div class="pointer"></div>
                         <div class="abstract">
-                          
-                        </div>
-                        <div class="declaration">
-                          <h4>Declaration</h4>
-                          <div class="language">
-                            <p class="aside-title">Swift</p>
-                            <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">indentationLevel</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <p>Localized information about the key.</p>
 
-                          </div>
-                        </div>
-                      </section>
-                    </div>
-                  </li>
-                  <li class="item">
-                    <div>
-                      <code>
-                      <a name="/s:4Able10ChoiceListP9choiceAIDAA0E0VSgvp"></a>
-                      <a name="//apple_ref/swift/Property/choiceAID" class="dashAnchor"></a>
-                      <a class="token" href="#/s:4Able10ChoiceListP9choiceAIDAA0E0VSgvp">choiceAID</a>
-                      </code>
-                    </div>
-                    <div class="height-container">
-                      <div class="pointer-container"></div>
-                      <section class="section">
-                        <div class="pointer"></div>
-                        <div class="abstract">
-                          
                         </div>
                         <div class="declaration">
                           <h4>Declaration</h4>
                           <div class="language">
                             <p class="aside-title">Swift</p>
-                            <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">choiceAID</span><span class="p">:</span> <span class="kt"><a href="../Structs/AID.html">AID</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
-
-                          </div>
-                        </div>
-                      </section>
-                    </div>
-                  </li>
-                  <li class="item">
-                    <div>
-                      <code>
-                      <a name="/s:4Able10ChoiceListP16availableOptionsSayAA0B4ItemOyxGGvpZ"></a>
-                      <a name="//apple_ref/swift/Variable/availableOptions" class="dashAnchor"></a>
-                      <a class="token" href="#/s:4Able10ChoiceListP16availableOptionsSayAA0B4ItemOyxGGvpZ">availableOptions</a>
-                      </code>
-                    </div>
-                    <div class="height-container">
-                      <div class="pointer-container"></div>
-                      <section class="section">
-                        <div class="pointer"></div>
-                        <div class="abstract">
-                          
-                        </div>
-                        <div class="declaration">
-                          <h4>Declaration</h4>
-                          <div class="language">
-                            <p class="aside-title">Swift</p>
-                            <pre class="highlight swift"><code><span class="kd">@inlinable</span>
-<span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">availableOptions</span><span class="p">:</span> <span class="p">[</span><span class="kt">Choice</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                            <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">keyDescription</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                           </div>
                         </div>

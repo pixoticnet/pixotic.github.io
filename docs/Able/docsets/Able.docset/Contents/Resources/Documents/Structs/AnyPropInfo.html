@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>ChoiceList Protocol Reference</title>
+    <title>AnyPropInfo Structure Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -11,8 +11,8 @@
     
   </head>
   <body>
-    <a name="//apple_ref/swift/Protocol/ChoiceList" class="dashAnchor"></a>
-    <a title="ChoiceList Protocol Reference"></a>
+    <a name="//apple_ref/swift/Struct/AnyPropInfo" class="dashAnchor"></a>
+    <a title="AnyPropInfo Structure Reference"></a>
     <header>
       <div class="content-wrapper">
         <p>
@@ -36,7 +36,7 @@
             <a href="../index.html">Able Reference</a>
             <img id="carat" src="../img/carat.png" />
           </span>
-          ChoiceList Protocol Reference
+          AnyPropInfo Structure Reference
         </p>
       </div>
     </div>
@@ -45,15 +45,20 @@
         <article class="main-content">
           <section>
             <section class="section">
-              <h1>ChoiceList</h1>
+              <h1>AnyPropInfo</h1>
                 <div class="declaration">
                   <div class="language">
                     
-                    <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">ChoiceList</span> <span class="p">:</span> <span class="kt">Hashable</span></code></pre>
+                    <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AnyPropInfo</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/PropInfo.html">PropInfo</a></span></code></pre>
 
                   </div>
                 </div>
-              <p>Undocumented</p>
+              <p>Untyped <code><a href="../Protocols/PropInfo.html">PropInfo</a></code> impementation</p>
+<div class="aside aside-todo">
+    <p class="aside-title">Todo</p>
+    @available(*, deprecated, renamed: &ldquo;TypedPropInfo&rdquo;)
+
+</div>
 
             </section>
             <section class="section task-group-section">
@@ -62,9 +67,9 @@
                   <li class="item">
                     <div>
                       <code>
-                      <a name="/s:4Able10ChoiceListP0B0a"></a>
-                      <a name="//apple_ref/swift/Alias/Choice" class="dashAnchor"></a>
-                      <a class="token" href="#/s:4Able10ChoiceListP0B0a">Choice</a>
+                      <a name="/s:4Able11AnyPropInfoV5titleSSvp"></a>
+                      <a name="//apple_ref/swift/Property/title" class="dashAnchor"></a>
+                      <a class="token" href="#/s:4Able11AnyPropInfoV5titleSSvp">title</a>
                       </code>
                     </div>
                     <div class="height-container">
@@ -72,14 +77,14 @@
                       <section class="section">
                         <div class="pointer"></div>
                         <div class="abstract">
-                          <p>Undocumented</p>
+                          <p>The localized title of the property</p>
 
                         </div>
                         <div class="declaration">
                           <h4>Declaration</h4>
                           <div class="language">
                             <p class="aside-title">Swift</p>
-                            <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">Choice</span> <span class="o">=</span> <span class="kt"><a href="../Enums/ChoiceItem.html">ChoiceItem</a></span><span class="o">&lt;</span><span class="k">Self</span><span class="o">&gt;</span></code></pre>
+                            <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">title</span><span class="p">:</span> <span class="kt">String</span></code></pre>
 
                           </div>
                         </div>
@@ -89,9 +94,9 @@
                   <li class="item">
                     <div>
                       <code>
-                      <a name="/s:4Able10ChoiceListP16availableOptionsSayAA0B4ItemOyxGGvpZ"></a>
-                      <a name="//apple_ref/swift/Variable/availableOptions" class="dashAnchor"></a>
-                      <a class="token" href="#/s:4Able10ChoiceListP16availableOptionsSayAA0B4ItemOyxGGvpZ">availableOptions</a>
+                      <a name="/s:4Able11AnyPropInfoV3keys9CodingKey_pSgvp"></a>
+                      <a name="//apple_ref/swift/Property/key" class="dashAnchor"></a>
+                      <a class="token" href="#/s:4Able11AnyPropInfoV3keys9CodingKey_pSgvp">key</a>
                       </code>
                     </div>
                     <div class="height-container">
@@ -99,14 +104,14 @@
                       <section class="section">
                         <div class="pointer"></div>
                         <div class="abstract">
-                          <p>The order of the items as they should appear in a menu; <code>.separator</code> indicates a dividing point between categories that may be represented by a divider or other separator.</p>
+                          <p>The key of the original property</p>
 
                         </div>
                         <div class="declaration">
                           <h4>Declaration</h4>
                           <div class="language">
                             <p class="aside-title">Swift</p>
-                            <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">var</span> <span class="nv">availableOptions</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Protocols/ChoiceList.html#/s:4Able10ChoiceListP0B0a">Choice</a></span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                            <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">CodingKey</span><span class="p">?</span></code></pre>
 
                           </div>
                         </div>
@@ -116,94 +121,24 @@
                   <li class="item">
                     <div>
                       <code>
-                      <a name="/s:4Able10ChoiceListP14localizedTitleSSvp"></a>
-                      <a name="//apple_ref/swift/Property/localizedTitle" class="dashAnchor"></a>
-                      <a class="token" href="#/s:4Able10ChoiceListP14localizedTitleSSvp">localizedTitle</a>
-                      </code>
-                    </div>
-                    <div class="height-container">
-                      <div class="pointer-container"></div>
-                      <section class="section">
-                        <div class="pointer"></div>
-                        <div class="abstract">
-                          <p>The title of the enumeration case as it appears in a menu</p>
-
-                        </div>
-                        <div class="declaration">
-                          <h4>Declaration</h4>
-                          <div class="language">
-                            <p class="aside-title">Swift</p>
-                            <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">localizedTitle</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
-
-                          </div>
-                        </div>
-                      </section>
-                    </div>
-                  </li>
-                  <li class="item">
-                    <div>
-                      <code>
-                      <a name="/s:4Able10ChoiceListP16indentationLevelSivp"></a>
-                      <a name="//apple_ref/swift/Property/indentationLevel" class="dashAnchor"></a>
-                      <a class="token" href="#/s:4Able10ChoiceListP16indentationLevelSivp">indentationLevel</a>
-                      </code>
-                        <span class="declaration-note">
-                          Default implementation
-                        </span>
-                    </div>
-                    <div class="height-container">
-                      <div class="pointer-container"></div>
-                      <section class="section">
-                        <div class="pointer"></div>
-                        <div class="abstract">
-                          <p>The indentation level that a menu item representing this choice should have</p>
-
-                        </div>
-                        <h4>Default Implementation</h4>
-                        <div class="default_impl abstract">
-                          <p>Default implementation has no indentation</p>
-
-                        </div>
-                        <div class="declaration">
-                          <h4>Declaration</h4>
-                          <div class="language">
-                            <p class="aside-title">Swift</p>
-                            <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">indentationLevel</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
-
-                          </div>
-                        </div>
-                      </section>
-                    </div>
-                  </li>
-                  <li class="item">
-                    <div>
-                      <code>
-                      <a name="/s:4Able10ChoiceListP7toolTipSSSgvp"></a>
+                      <a name="/s:4Able11AnyPropInfoV7toolTipSSSgvp"></a>
                       <a name="//apple_ref/swift/Property/toolTip" class="dashAnchor"></a>
-                      <a class="token" href="#/s:4Able10ChoiceListP7toolTipSSSgvp">toolTip</a>
+                      <a class="token" href="#/s:4Able11AnyPropInfoV7toolTipSSSgvp">toolTip</a>
                       </code>
-                        <span class="declaration-note">
-                          Default implementation
-                        </span>
                     </div>
                     <div class="height-container">
                       <div class="pointer-container"></div>
                       <section class="section">
                         <div class="pointer"></div>
                         <div class="abstract">
-                          <p>The localized tooltip that will be displayed to the user</p>
-
-                        </div>
-                        <h4>Default Implementation</h4>
-                        <div class="default_impl abstract">
-                          <p>Default implementation has no tooltip</p>
+                          <p>The localized toolTip describing the property</p>
 
                         </div>
                         <div class="declaration">
                           <h4>Declaration</h4>
                           <div class="language">
                             <p class="aside-title">Swift</p>
-                            <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">toolTip</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                            <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">toolTip</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
 
                           </div>
                         </div>
@@ -213,32 +148,24 @@
                   <li class="item">
                     <div>
                       <code>
-                      <a name="/s:4Able10ChoiceListP6symbolAA12SymbolSourceOSgvp"></a>
-                      <a name="//apple_ref/swift/Property/symbol" class="dashAnchor"></a>
-                      <a class="token" href="#/s:4Able10ChoiceListP6symbolAA12SymbolSourceOSgvp">symbol</a>
+                      <a name="/s:4Able11AnyPropInfoV4stepSdSgvp"></a>
+                      <a name="//apple_ref/swift/Property/step" class="dashAnchor"></a>
+                      <a class="token" href="#/s:4Able11AnyPropInfoV4stepSdSgvp">step</a>
                       </code>
-                        <span class="declaration-note">
-                          Default implementation
-                        </span>
                     </div>
                     <div class="height-container">
                       <div class="pointer-container"></div>
                       <section class="section">
                         <div class="pointer"></div>
                         <div class="abstract">
-                          <p>The image that will appear in a popup menu or segmented control</p>
-
-                        </div>
-                        <h4>Default Implementation</h4>
-                        <div class="default_impl abstract">
-                          <p>By default there is no image</p>
+                          <p>The step value of the property, if any</p>
 
                         </div>
                         <div class="declaration">
                           <h4>Declaration</h4>
                           <div class="language">
                             <p class="aside-title">Swift</p>
-                            <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">symbol</span><span class="p">:</span> <span class="kt"><a href="../Enums/SymbolSource.html">SymbolSource</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                            <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">step</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span></code></pre>
 
                           </div>
                         </div>
@@ -248,31 +175,24 @@
                   <li class="item">
                     <div>
                       <code>
-                      <a name="/s:4Able10ChoiceListP9choiceAIDAA0E0VSgvp"></a>
-                      <a name="//apple_ref/swift/Property/choiceAID" class="dashAnchor"></a>
-                      <a class="token" href="#/s:4Able10ChoiceListP9choiceAIDAA0E0VSgvp">choiceAID</a>
+                      <a name="/s:4Able11AnyPropInfoV3minSdSgvp"></a>
+                      <a name="//apple_ref/swift/Property/min" class="dashAnchor"></a>
+                      <a class="token" href="#/s:4Able11AnyPropInfoV3minSdSgvp">min</a>
                       </code>
-                        <span class="declaration-note">
-                          Default implementation
-                        </span>
                     </div>
                     <div class="height-container">
                       <div class="pointer-container"></div>
                       <section class="section">
                         <div class="pointer"></div>
                         <div class="abstract">
-                          <p>The accessibility ID for this item, if any</p>
+                          <p>The minimum value of the property, if any</p>
 
-                        </div>
-                        <h4>Default Implementation</h4>
-                        <div class="default_impl abstract">
-                          
                         </div>
                         <div class="declaration">
                           <h4>Declaration</h4>
                           <div class="language">
                             <p class="aside-title">Swift</p>
-                            <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">choiceAID</span><span class="p">:</span> <span class="kt"><a href="../Structs/AID.html">AID</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                            <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">min</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span></code></pre>
 
                           </div>
                         </div>
@@ -282,74 +202,24 @@
                   <li class="item">
                     <div>
                       <code>
-                      <a name="/s:4Able10ChoiceListPAAE16availableChoicesSayxSgGvpZ"></a>
-                      <a name="//apple_ref/swift/Variable/availableChoices" class="dashAnchor"></a>
-                      <a class="token" href="#/s:4Able10ChoiceListPAAE16availableChoicesSayxSgGvpZ">availableChoices</a>
+                      <a name="/s:4Able11AnyPropInfoV4sminSdSgvp"></a>
+                      <a name="//apple_ref/swift/Property/smin" class="dashAnchor"></a>
+                      <a class="token" href="#/s:4Able11AnyPropInfoV4sminSdSgvp">smin</a>
                       </code>
-                        <span class="declaration-note">
-                          Extension method
-                        </span>
                     </div>
                     <div class="height-container">
                       <div class="pointer-container"></div>
                       <section class="section">
                         <div class="pointer"></div>
                         <div class="abstract">
-                          <p>The choices that are available for this type (filtering out any dividers and sections)</p>
+                          <p>The soft minimum value of the property, if any</p>
 
                         </div>
                         <div class="declaration">
                           <h4>Declaration</h4>
                           <div class="language">
                             <p class="aside-title">Swift</p>
-                            <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">var</span> <span class="nv">availableChoices</span><span class="p">:</span> <span class="p">[</span><span class="k">Self</span><span class="p">?]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
-
-                          </div>
-                        </div>
-                      </section>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <div class="task-group">
-                <div class="task-name-container">
-                  <a name="/Available%20where%20%60Self%60%20%3A%20%60CaseIterable%60"></a>
-                  <a name="//apple_ref/swift/Section/Available where `Self` : `CaseIterable`" class="dashAnchor"></a>
-                  <div class="section-name-container">
-                    <a class="section-name-link" href="#/Available%20where%20%60Self%60%20%3A%20%60CaseIterable%60"></a>
-                    <h3 class="section-name"><p>Available where <code>Self</code> : <code>CaseIterable</code></p>
-</h3>
-                  </div>
-                </div>
-                <ul>
-                  <li class="item">
-                    <div>
-                      <code>
-                      <a name="/s:4Able10ChoiceListPAAs12CaseIterableRzrlE16availableOptionsSayAA0B4ItemOyxGGvpZ"></a>
-                      <a name="//apple_ref/swift/Variable/availableOptions" class="dashAnchor"></a>
-                      <a class="token" href="#/s:4Able10ChoiceListPAAs12CaseIterableRzrlE16availableOptionsSayAA0B4ItemOyxGGvpZ">availableOptions</a>
-                      </code>
-                        <span class="declaration-note">
-                          Default implementation
-                        </span>
-                    </div>
-                    <div class="height-container">
-                      <div class="pointer-container"></div>
-                      <section class="section">
-                        <div class="pointer"></div>
-                        <div class="abstract">
-                          
-                        </div>
-                        <h4>Default Implementation</h4>
-                        <div class="default_impl abstract">
-                          <p>The default availableOptions just returns all the cases; this can be overridden</p>
-
-                        </div>
-                        <div class="declaration">
-                          <h4>Declaration</h4>
-                          <div class="language">
-                            <p class="aside-title">Swift</p>
-                            <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">var</span> <span class="nv">availableOptions</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Protocols/ChoiceList.html#/s:4Able10ChoiceListP0B0a">Choice</a></span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                            <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">smin</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span></code></pre>
 
                           </div>
                         </div>
@@ -359,13 +229,118 @@
                   <li class="item">
                     <div>
                       <code>
-                      <a name="/s:4Able10ChoiceListPAAs12CaseIterableRzrlE11choiceCasesSayAA0B4ItemOyxGGvpZ"></a>
-                      <a name="//apple_ref/swift/Variable/choiceCases" class="dashAnchor"></a>
-                      <a class="token" href="#/s:4Able10ChoiceListPAAs12CaseIterableRzrlE11choiceCasesSayAA0B4ItemOyxGGvpZ">choiceCases</a>
+                      <a name="/s:4Able11AnyPropInfoV3maxSdSgvp"></a>
+                      <a name="//apple_ref/swift/Property/max" class="dashAnchor"></a>
+                      <a class="token" href="#/s:4Able11AnyPropInfoV3maxSdSgvp">max</a>
                       </code>
-                        <span class="declaration-note">
-                          Extension method
-                        </span>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>The maximum value of the property, if any</p>
+
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Swift</p>
+                            <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">max</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span></code></pre>
+
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/s:4Able11AnyPropInfoV4smaxSdSgvp"></a>
+                      <a name="//apple_ref/swift/Property/smax" class="dashAnchor"></a>
+                      <a class="token" href="#/s:4Able11AnyPropInfoV4smaxSdSgvp">smax</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>The soft maximum value of the property, if any</p>
+
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Swift</p>
+                            <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">smax</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span></code></pre>
+
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/s:4Able11AnyPropInfoV9formatterSo11NSFormatterCSgvp"></a>
+                      <a name="//apple_ref/swift/Property/formatter" class="dashAnchor"></a>
+                      <a class="token" href="#/s:4Able11AnyPropInfoV9formatterSo11NSFormatterCSgvp">formatter</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>The formatter for the property</p>
+
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Swift</p>
+                            <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">formatter</span><span class="p">:</span> <span class="kt">Formatter</span><span class="p">?</span></code></pre>
+
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/s:4Able11AnyPropInfoV13toggleDefaultSbSgvp"></a>
+                      <a name="//apple_ref/swift/Property/toggleDefault" class="dashAnchor"></a>
+                      <a class="token" href="#/s:4Able11AnyPropInfoV13toggleDefaultSbSgvp">toggleDefault</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>The default boolean value for a toggle</p>
+
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Swift</p>
+                            <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">toggleDefault</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span></code></pre>
+
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/s:4Able11AnyPropInfoV_3key7toolTip4step3min4smin3max4smax9formatter13toggleDefaultACSS_s9CodingKey_pSgSSSgSdSgA4PSo17NSNumberFormatterCSgSbSgtcfc"></a>
+                      <a name="//apple_ref/swift/Method/init(_:key:toolTip:step:min:smin:max:smax:formatter:toggleDefault:)" class="dashAnchor"></a>
+                      <a class="token" href="#/s:4Able11AnyPropInfoV_3key7toolTip4step3min4smin3max4smax9formatter13toggleDefaultACSS_s9CodingKey_pSgSSSgSdSgA4PSo17NSNumberFormatterCSgSbSgtcfc">init(_:<wbr>key:<wbr>toolTip:<wbr>step:<wbr>min:<wbr>smin:<wbr>max:<wbr>smax:<wbr>formatter:<wbr>toggleDefault:<wbr>)</a>
+                      </code>
                     </div>
                     <div class="height-container">
                       <div class="pointer-container"></div>
@@ -379,7 +354,33 @@
                           <h4>Declaration</h4>
                           <div class="language">
                             <p class="aside-title">Swift</p>
-                            <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">var</span> <span class="nv">choiceCases</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Protocols/ChoiceList.html#/s:4Able10ChoiceListP0B0a">Choice</a></span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                            <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">title</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">CodingKey</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">toolTip</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">step</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">min</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">smin</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">max</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">smax</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">formatter</span><span class="p">:</span> <span class="kt">NumberFormatter</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">toggleDefault</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/s:4Able8PropInfoP12defaultValue10forContextqd__SgypSg_tlF"></a>
+                      <a name="//apple_ref/swift/Method/defaultValue(forContext:)" class="dashAnchor"></a>
+                      <a class="token" href="#/s:4Able8PropInfoP12defaultValue10forContextqd__SgypSg_tlF">defaultValue(forContext:<wbr>)</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Swift</p>
+                            <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">defaultValue</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">forContext</span><span class="p">:</span> <span class="kt">Any</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">T</span><span class="p">?</span></code></pre>
 
                           </div>
                         </div>
